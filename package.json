@@ -3,15 +3,18 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "ng": "ng",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
     "postinstall": "ng build --aot -prod",
     "start": "node Server.js"
   },
-  "engines": {
-    "node": "9.2.0",
-    "npm": "5.5.1"
-  },
   "private": true,
   "dependencies": {
+    "@angular/cli": "1.6.0",
+    "@angular/compiler-cli": "^5.0.0",
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
@@ -23,13 +26,10 @@
     "@angular/router": "^5.0.0",
     "angular-in-memory-web-api": "^0.5.1",
     "core-js": "^2.4.1",
-    "express": "^4.16.2",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
-    "@angular/cli": "1.6.0",
-    "@angular/compiler-cli": "^5.0.0",
     "@angular/language-service": "^5.0.0",
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
@@ -47,5 +47,9 @@
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
-  }
+  },
+  "engines": {
+        "node": "9.2.0",
+        "npm": "5.5.1"  
+      }
 }
