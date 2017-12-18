@@ -13,10 +13,10 @@ import {UserVotesService} from './user-votes/user-votes.service'
 })
 export class IdeasComponent   implements OnInit {
 
-      private ideas: Idea[] = [];
+      ideas: Idea[] = [];
       private pages: number[] = [];
       private currentPage = 1;
-      private findBYAuth = false;
+      findBYAuth = false;
 
       constructor(private ideasService: IdeasService ) { 
         setInterval(() => {
