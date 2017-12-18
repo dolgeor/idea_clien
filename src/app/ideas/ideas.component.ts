@@ -19,13 +19,13 @@ export class IdeasComponent   implements OnInit {
       findBYAuth = false;
 
       constructor(private ideasService: IdeasService ) { 
-        setInterval(() => {
-          if(this.findBYAuth){
-            this.getVotesForAllIdeas()
-          }else{
-            this.getAllIdeasWithVotes()
-          }
-        }, 1000 * 2);///refresh data
+        // setInterval(() => {
+        //   if(this.findBYAuth){
+        //     this.getVotesForAllIdeas()
+        //   }else{
+        //     this.getAllIdeasWithVotes()
+        //   }
+        // }, 1000 * 2);///refresh data
       }
         
 
