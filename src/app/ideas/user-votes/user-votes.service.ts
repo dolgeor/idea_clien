@@ -14,7 +14,7 @@ import {Vote} from './votes/votes'
 @Injectable()
 export class UserVotesService {
 
-  private url: string = "";
+  private url: string = "api/ideas";
 
   constructor(private http: Http) { }
 
