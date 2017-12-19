@@ -18,7 +18,7 @@
 var express     = require('express');
 var herokuProxy = require('heroku-proxy');
 var app         = express();
- 
+const path = require('path');
 // ...set up heroku-bouncer 
  
 app.use(herokuProxy({
