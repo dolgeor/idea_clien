@@ -9,6 +9,7 @@ var proxy = require('express-http-proxy');
 // app.use(express.static(__dirname + '/dist'));
 // Start the app by listening on the default
 // Heroku port
+console.log("asdasdasdasd" + process.env.PORT)
 app.listen( process.env.PORT || 3000);
 app.use('/api', proxy("https://isd-ideas-back.herokuapp.com/"));
 
