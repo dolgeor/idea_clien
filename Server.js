@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 // Run the app by serving the static files
 // in the dist directory
-app.use(express.static(__dirname + '/dist'));
+//////////////////////////////////app.use(express.static(__dirname + '/dist'));
 // Start the app by listening on the default
 // Heroku port
 app.listen(process.env.PORT || 8080);
@@ -15,8 +15,8 @@ app.get('/*',function(req,res){
 
 app.use(herokuProxy({
     hostname: 'isd-ideas-back.herokuapp.com/ideas',
-    port    : 5001,
-    prefix  : '',
+    port    : 8080,
+    prefix  : 'heroku-api',
     protocol: 'http'
   }));
 

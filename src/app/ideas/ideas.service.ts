@@ -15,7 +15,7 @@ import {Vote} from './user-votes/votes/votes'
 @Injectable()
 export class IdeasService {
 
-  private url: string = "";
+  private url: string = "heroku-api";
  
   constructor(private http: Http) { }
 
