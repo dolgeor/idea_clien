@@ -20,4 +20,4 @@ var proxy = httpProxy.createProxyServer({});
 
 http.createServer(function(req, res) {
     proxy.web(req, res,{"target": "https://isd-ideas-back.herokuapp.com/ideas"});console.log('ihhhhhhha');
-}).listen(3000);
+}).listen(8080);
