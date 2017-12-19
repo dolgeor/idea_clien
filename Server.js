@@ -19,5 +19,5 @@ var httpProxy = require('http-proxy');
 var proxy = httpProxy.createProxyServer({});
 
 http.createServer(function(req, res) {
-    proxy.web(req, res, { target: 'http://www.google.com' });console.log('ihhhhhhha');
+    proxy.web(req, res,{"target": "https://isd-ideas-back.herokuapp.com/ideas"});console.log('ihhhhhhha');
 }).listen(3000);
