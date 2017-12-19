@@ -13,12 +13,3 @@ app.get('/*',function(req,res){
 })
 
 console.log('test server js')
-
-
-var request = require('request');
-request({'url':'https://isd-ideas-back.herokuapp.com/ideas',
-        'proxy':'http://yourproxy:8087'}, function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-        console.log(body);
-    }
-})
