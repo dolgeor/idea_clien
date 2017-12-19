@@ -14,10 +14,11 @@ app.get('/*',function(req,res){
 
 console.log('test server js')
 
-var http = require('http');
-var httpProxy = require('http-proxy');
-var proxy = httpProxy.createProxyServer({});
 
-http.createServer(function(req, res) {
-    proxy.web(req, res,{"target": "https://isd-ideas-back.herokuapp.com/ideas"});console.log('ihhhhhhha');
-}).listen(8080);
+var request = require('request');
+request({'url':'https://isd-ideas-back.herokuapp.com/ideas',
+        'proxy':'http://yourproxy:8087'}, function (error, response, body) {
+    if (!error && response.statusCode == 200) {
+        console.log(body);
+    }
+})
