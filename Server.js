@@ -11,7 +11,7 @@ var proxy = require('express-http-proxy');
 // Heroku port
 
 app.listen( process.env.PORT || 3000);
-app.use('/api', proxy("https://isd-ideas-back.herokuapp.com/"));
+app.use('/api', proxy("http://isd-ideas-back.herokuapp.com/"));
 
 
 // app.get('/*', function (req, res) {
