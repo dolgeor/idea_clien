@@ -8,5 +8,5 @@
         "target": "http://google.com",
         "secure": false,
         "logLevel": "debug"
-    },
+    }
 }
